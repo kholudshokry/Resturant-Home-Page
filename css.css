@@ -1,0 +1,1034 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@700&display=swap');
+
+
+
+/* ====================== start general ===================  */
+body{
+    font-family:  sans-serif,'Dancing Script', cursive;
+}
+p{
+    color:#757191;
+}
+
+a {
+	color: #292b2c;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	transition: all .5s ease;
+}
+a:hover {
+	color: #FF324D;
+	text-decoration: none;
+}
+/* ====================== End general ===================  */
+
+/* ================= navbar  ====================*/
+#header{
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+   
+}
+.cart_count {
+	position: relative;
+	top: -3px;
+	left: -5px;
+	font-size: 11px;
+	background-color: #FF324D;
+	border-radius: 50px;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	min-width: 16px;
+	text-align: center;
+	padding: 0 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav.white{
+	z-index: 9999;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	
+	
+}
+.navbar .navbar-nav li {
+	position: relative;
+	list-style: none;
+	transition: all 0.3s ease 0s;
+}
+.navbar-nav .dropdown-menu {
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+	min-width: 14rem;
+	
+}
+
+/* ============ Nav hover ============ */
+@media all and (min-width: 14rem) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color:#FF324D;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+
+/* ============ End Nav Hver ============ */
+
+
+.navbar-nav .dropdown-menu {
+	background-color: white;
+}
+
+.navbar .navbar-nav .dropdown-menu li a:hover, 
+.navbar .navbar-nav .dropdown-menu > ul > li:hover > a, 
+.navbar .navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li:hover > a {
+	padding-left: 25px;
+}
+
+.dropdown-toggler::after {
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+.dropdown:not(.dropdown-mega-menu) .dropdown-menu > ul, 
+.mega-menu-col > ul, 
+.dropdown .dropdown-menu .dropdown-menu > ul {
+	padding: 10px 5px;
+}
+
+/*=============== padding of li of nav when hover ===============*/
+.navbar .navbar-nav .dropdown-item {
+	padding: 8px 20px 8px 20px;
+	color: #333;
+	text-transform: capitalize;
+}
+/*=============== end padding of li of nav when hover ===============*/
+
+
+.navbar .navbar-nav .dropdown-menu li a.active, 
+.navbar .navbar-nav .dropdown-menu li a:hover, 
+.navbar .navbar-nav .dropdown-menu > ul > li:hover > a, 
+.navbar .navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li:hover > a, 
+.sticky_dark_skin.nav-fixed .navbar .navbar-nav .dropdown-item:hover {
+	color: #FF324D;
+}
+
+.navbar .container i{
+    cursor: pointer;
+}
+.nav-link{
+    font-weight: bold;
+    color: white;
+    font-size: 13px !important;
+}
+.nav-link:hover{
+    color: #FD304B;
+}
+.order-lg-last:hover{
+    color: #FD304B;
+}
+.btn-group{
+    color:white;
+}
+.navbar-toggler i{
+    color:white;  
+}
+
+/* ================= End of navbar  ====================*/
+
+/* =================  Hero Section  ====================*/
+
+#hero{
+	position: relative;
+    display: table;
+    width: 100%;
+	height: 100vh;
+	/* background-image: url(images/bg.jpg); */
+   
+	
+}
+@media (min-width: 1024px){
+    #hero{
+    background-attachment: fixed;
+    }
+}
+#hero-logo{
+    margin: 20px;
+    max-width: 100%;
+
+}
+
+ .hero-container #title{
+    font-size: 70px;
+    color: white;
+    font-style: italic;
+}
+#hero .hero-container h4{
+    font-size: 15px;
+}
+#hero .hero-container {
+    background: none;
+    display: table-cell;
+    margin: 0;
+    padding: -10;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+@media (max-width: 768px){
+    #hero h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+#hero h4{
+    color: white;
+    margin-bottom: 50px;
+}
+@media (max-width: 768px){
+    #hero h4{
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+}
+
+#hero .actions a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+}
+#bt1{
+    background: rgb(253,48,75);
+    border: 2px solid #FD304B;
+    color: #fff;
+    
+    
+}
+#bt1:hover{
+    background: none;
+    border: 2px solid #FD304B;
+    color:#FD304B;
+    text-decoration: none;
+
+}
+
+#bt2{
+    background: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    color:  #000;
+}
+#bt2:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+
+}
+/* =================  End Of Hero Section  ====================*/
+
+/* =================  Start about Section  ====================*/
+
+.about{
+    margin:90px;
+}
+#about{
+    background: rgb(253,48,75);
+    border: 2px solid #FD304B;
+    color: #fff;
+    border-radius: 22px;
+    line-height: 36px;
+     width: 180px;
+    
+    
+}
+#about:hover{
+    background: none;
+    border: 2px solid #FD304B;
+    color:#FD304B;
+    text-decoration: none;
+}
+/* =================  End about Section  ====================*/
+
+/*======================== START menu style ======================*/
+
+#btn{
+    background: rgb(253,48,75);
+    border: 2px solid #FD304B;
+    color: #fff;
+    border-radius: 22px;
+    line-height: 36px;
+     width: 150px;
+    
+}
+#btn:hover{
+    background: none;
+    border: 2px solid #FD304B;
+    color:#FD304B;
+    text-decoration: none;
+
+}
+.single_menu_product {
+	margin-bottom: 30px;
+}
+.menu_list {
+	margin: 0 -15px;
+}
+.menu_title_price {
+	margin-bottom: 10px;
+}
+.menu_list li {
+	list-style: none;
+	float: left;
+	width: 50%;
+	padding: 0 15px;
+}
+.menu_list li:nth-child(2n) {
+	padding-left: 30px;
+}
+.menu_list li:nth-child(2n+1) {
+	padding-right: 30px;
+	clear: both;
+}
+.menu_title * {
+	margin: 0;
+	text-transform: uppercase;
+}
+.menu_product_info p:last-child {
+	margin-bottom: 0;
+}
+.menu_price span {
+	color: #FF324D;
+	font-size: 20px;
+}
+.menu_title, .menu_title_line, .menu_price {
+	display: table-cell;
+	width: 1%;
+	white-space: nowrap;
+}
+.menu_title {
+	padding-right: 10px;
+}
+.menu_title_line {
+	display: table-cell;
+	width: 98%;
+	border-bottom: 1px dashed #715b3e;
+	position: relative;
+	bottom: 12px;
+}
+.menu_price {
+	padding-left: 10px;
+}
+.menu_product_img {
+	position: relative;
+}
+.single_product {
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.releted_product_slider .single_product {
+	margin: 10px;
+}
+.action_btn {
+	position: absolute;
+	left: 0;
+	top: 70%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.action_btn .btn {
+	padding: 10px 20px;
+}
+.single_product .menu_product_img::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.single_product .menu_product_img img {
+	width: 100%;
+}
+.single_product .menu_product_info p {
+	font-size: 14px;
+	line-height: 24px;
+}
+.single_product .menu_product_info {
+	padding: 15px;
+}
+.single_product .menu_product_info .title * {
+	margin-bottom: 5px;
+	font-weight: 600;
+	font-size: 18px;
+}
+.menu_footer {
+	margin: 0 20px;
+	padding: 10px 0;
+	border-top: 1px dashed #ddd;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.single_product:hover .menu_product_img::before,
+.single_product:hover .action_btn {
+	opacity: 1;
+}
+.single_product:hover .action_btn {
+	top: 50%;
+}
+.heading_tab_header {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 30px;
+	position: relative;
+	-ms-flex-align: center;
+	align-items: center;
+	z-index: 9;
+}
+.heading_tab_header [class*="heading_"] {
+	margin: 0;
+}
+.heading_tab_header .navbar-toggler {
+	margin: 0;
+	display: none;
+}
+/*======================== END Menu STYLE ===================*/
+
+/*======================== START MOBILE STYLE ===================*/
+.mobile h3{
+    font-family:'Dancing Script';
+    color: #FD304B;
+}
+.mobile h1{
+    font-family:'Bree Serif';
+}
+#mob-btn2{
+    background: rgb(253,48,75);
+    border: 2px solid #FD304B;
+    color: #fff;
+    border-radius: 22px;
+    line-height: 36px;
+     width: 180px;   
+}
+#mob-btn2:hover{
+    background: none;
+    border: 2px solid #FD304B;
+    color:#FD304B;
+    text-decoration: none;
+}
+#mob-btn1{
+    background: #333333;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    color:  white;
+    border-radius: 22px;
+    line-height: 36px;
+	 width: 180px;
+}
+#mob-btn1:hover{
+    background: none;
+    border: 2px solid #333333;
+    color: #333333;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+}
+/*======================== END MOBILE STYLE ===================*/
+
+/* ================= start team section  ====================*/
+
+.product{
+   width: 100%;
+   display: block;
+   margin-bottom: 50px;
+   transition: all 0.3s ease; 
+   height:400px ;
+}
+.product .img{
+    display: block;
+    border-radius: 8px 8px 0px 0px ;
+    height:300px ;
+    position: relative;
+    transition: all 0.3s ease; 
+	z-index: 0;
+	box-shadow: 0 0 1rem rgb(134, 134, 134);
+	width: 100%;
+}
+.product .img:after{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000;
+    opacity: 0;
+    border-radius: 4px;
+    transition: all 0.6s ease; 
+
+}
+
+.product .img .icons .icons-block a{
+    margin: 0 2px;
+    width: 60px;
+	height: 60px;  
+}
+.product .img .icons .icons-block a i{
+    color: white;   
+}
+.product .img .icons .icons-block a i:hover{
+    color: #FD304B;  
+}
+.product:hover .img:after{
+    opacity: 0.7;
+}
+.product:hover .img .icons{
+	opacity: 0.7;
+}
+.glow{
+    display: inline-block;
+    vertical-align: middle;
+    transform:perspective(1px) translateZ(0) ;
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transition-duration:0.3s;
+	transition-property: box-shadow;
+	box-shadow: 1px 1px 8px rgba(143, 142, 142, 0.3);
+	border-radius: 8px ;
+  
+    
+}
+.glow:hover, .glow:focus, .glow:active{
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+/* ================= end team section  ====================*/
+
+/*============================ START  DESIGN Book  =============================*/
+
+.form-control {
+	color: #000;
+	box-shadow: none;
+	height: 50px;
+	padding: 8px 15px;
+}
+
+.form-control:focus,
+.custom-file-input:focus ~ .custom-file-label {
+	color: #000;
+	box-shadow: none;
+	height: 50px;
+}
+textarea.form-control, textarea.form-control:focus {
+	height: auto;
+	padding: 12px 15px;
+}
+.form-control-sm,
+.form-control-sm:focus,
+.custom_select select.form-control-sm,
+.custom_select select.form-control-sm:focus {
+	height: 45px;
+}
+select.not_chosen, 
+select.first_null option:first-child, 
+select.not_chosen:focus, 
+select.form-control.not_chosen, 
+select.form-control.first_null option:first-child, 
+select.not_chosen.form-control:focus {
+	color: #6c757d;
+}
+select option {
+	color: #000;
+}
+.custom_select {
+	position: relative;
+}
+.custom_select select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	padding: 8px 35px 8px 15px;
+	width: 100%;
+	height: 50px;
+}
+.custom_select::before {
+	content: "\e64b";
+	font-family: 'themify';
+	position: absolute;
+	display: block;
+	color: #848484;
+	top: 50%;
+	right: 15px;
+	font-weight: 900;
+	pointer-events: none;
+	font-size: 12px;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.field_form .form-group {
+	margin-bottom: 30px;
+}
+.form_style2 .form-control,
+.form_style2 input,
+.form_style2 textarea,
+.form_style2 select {
+	color: #fff;
+	background-color: transparent;
+	border-color: rgba(255, 255, 255, 0.4)
+}
+.form_style2 .form-control::placeholder {
+    color: #fff;
+}
+.form_style2 .form-control::placeholder {
+    color: #fff;
+}
+.form_style2 .form-control::placeholder {
+    color: #fff;
+}
+.form_style2 .form-control::placeholder {
+    color: #fff;
+}
+.form_style2 .input_icon,
+.form_style2 select.not_chosen, .form_style2 select.not_chosen:focus, .form_style2 select.form-control.not_chosen, .form_style2 select.not_chosen.form-control:focus,
+.form_style2 .custom_select::before {
+	color: #fff;
+}
+.rounded_input .form-control,
+.rounded_input input {
+	border-radius: 30px;
+	padding: 10px 20px;
+}
+.rounded_input .custom_select select {
+	padding-right: 40px;
+}
+.rounded_input .custom_select::before {
+	right: 20px;
+}
+.rounded_input textarea.form-control, .rounded_input textarea.form-control:focus {
+	padding: 15px 20px;
+}
+.input_group {
+	position: relative;
+}
+.input_icon {
+	position: absolute;
+	right: 20px;
+	top: 13px;
+	pointer-events: none;
+	color: #848484;
+	font-size: 16px;
+}
+
+#sub-btn{
+    background: white;
+    border: 2px solid white;
+    border-radius: 16px;
+    color:  #333333;
+    border-radius: 22px;
+    line-height: 50px;
+     width: 150px;
+     font-size: 18px;
+}
+#sub-btn:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+
+}
+
+/*============================ End  DESIGN Book  =============================*/
+
+
+/*======================== START BLOG STYLE ======================*/
+
+.blog_post {
+	margin-bottom: 30px;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+	box-shadow: 0 0 1rem rgb(153, 151, 151);
+}
+
+.blog_content {
+	padding-top: 15px;
+    background-color: #fff;
+    box-shadow: black;
+}
+.blog_post .blog_img a {
+	display: block;
+	overflow: hidden;
+}
+.blog_img {
+	position: relative;
+	overflow: hidden;
+}
+.blog_img img {
+	width: 100%;
+}
+
+.blog_meta {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.blog_meta li {
+    list-style: none;
+	float: left;
+	margin-right: 15px;
+}
+.blog_meta li:last-child {
+	margin-right: 0;
+}
+.blog_meta li a {
+	text-transform: capitalize;
+	color: #687188;
+}
+.blog_meta li a i {
+	margin-right: 5px;
+	color: #FF324D;
+}
+.blog_title {
+	font-weight: 900;
+}
+h6.blog_title {
+	line-height: 24px;
+}
+.blog_text p {
+	margin-bottom: 15px;
+}
+.blog_text p:last-child {
+	margin: 0;
+}
+.fit-videos {
+	background-color: #000000;
+}
+.blog_style1.blog_post {
+	border-radius: 10px;
+}
+.blog_style1 .blog_img {
+	border-radius: 10px 10px 0 0;
+}
+.blog_style1 .blog_content,
+.blog_style2 .blog_content {
+	padding: 15px;
+}
+.blog_style1 .blog_img img,
+.blog_style2 .blog_img img {
+	transition: all 0.5s ease-in-out;
+	width: 100%;
+}
+.blog_style1:hover .blog_img img,
+.blog_style2:hover .blog_img img {
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.post_date {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 30px;
+	text-align: center;
+	background-color: #FF324D;
+	min-width: 60px;
+	padding: 8px 10px;
+	color: #ffffff;
+	z-index: 2;
+}
+.post_date strong {
+	font-size: 30px;
+	line-height: 1;
+}
+.blog_img .owl-dots {
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+.blog_thumbs .blog_post {
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.blog_thumbs .blog_img {
+	float: left;
+	width: 40%;
+}
+.single_post .blog_content {
+	padding-top: 20px;
+}
+.single_post .blog_title {
+	font-size: 30px;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+.single_post .blog_meta {
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+.post_author .author_img {
+	float: left;
+	padding-right: 15px;
+}
+.post_author .author_img img {
+	max-width: 80px;
+}
+.post_author .author_info {
+	overflow: hidden;
+}
+.post_author {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.content_title * {
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+.comment_user img {
+    height: auto;
+    max-width: 80px;
+}
+.comment_content .meta_data h6 {
+	font-size: 16px;
+}
+.comment_info {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.comment_info:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.comment_content p:last-child {
+	margin-bottom: 0;
+}
+.children {
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	padding-top: 20px;
+	margin-left: 60px;
+}
+.comment_content {
+    padding-left: 20px;
+}
+.comment-time {
+	font-size: 14px;
+	line-height: normal;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+.comment-reply i {
+    margin-right: 5px;
+}
+.comment-area .comment_list {
+    margin-bottom: 40px;
+}
+.comment-area {
+	padding-top: 10px;
+}
+/*=======================  END BLOG STYLE  ======================*/
+
+/*================== START FOOTER STYLE ==================*/
+footer {
+	overflow: hidden;
+}
+.footer_dark {
+	background-color: #202325;
+	position: relative;
+}
+.footer_top {
+	padding: 100px 0 70px;
+}
+.footer_logo {
+	margin-bottom: 30px;
+}
+footer p {
+	font-size: 14px;
+}
+footer .widget {
+	margin-bottom: 30px;
+}
+footer .widget_title {
+	text-transform: capitalize;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.widget p:last-child {
+	margin: 0;
+}
+.widget_links li {
+	list-style: none;
+	padding-bottom: 10px;
+}
+.widget_links li:last-child {
+	padding-bottom: 0;
+}
+.widget_links li a {
+	font-size: 14px;
+	color: #687188;
+}
+.contact_info > li {
+	margin-bottom: 15px;
+	list-style: none;
+}
+.contact_info > li:last-child {
+	margin-bottom: 0px;
+}
+.contact_info li i {
+	color: #FF324D;
+	display: flex;
+	margin-right: 10px;
+	margin-top: 4px;
+	font-size: 18px;
+	vertical-align: top;
+}
+.contact_info_light li strong {
+	font-weight: 500;
+}
+.contact_info li span {
+	float: left;
+	margin-right: 10px;
+	max-width: 70px;
+	width: 100%;
+	color: #292b2c;
+}
+.contact_info span + * {
+	overflow: hidden;
+	color: #687188;
+	margin: 0;
+	font-size: 14px;
+	line-height: 26px;
+}
+.contact_info i + * {
+	overflow: hidden;
+	font-size: 14px;
+	color: #687188;
+	line-height: 26px;
+	margin: 0;
+	vertical-align: middle;
+	max-width: 78%;
+	display: inline-block;
+}
+.contact_info_light li i {
+	border-color: #fff;
+	color: #fff;
+}
+.contact_info_style2 i + * {
+	font-size: 18px;
+}
+.contact_info_style2 li i {
+	margin-right: 8px;
+	margin-top: 2px;
+	font-size: 22px;
+	color: #FF324D;
+}
+.border-top-tran {
+	border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.bottom_footer {
+	padding: 30px 0;
+	position: relative;
+}
+.footer_link li {
+	display: inline-block;
+	position: relative;
+}
+.insta_icon {
+	color: #fff;
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	text-align: center;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	transition: all 0.5s ease-in-out;
+	z-index: 2;
+}
+.widget_instafeed li:hover a::before, .widget_instafeed li:hover .insta_icon {
+	opacity: 1;
+}
+.nav-tabs li.nav-item a {
+	background-color: transparent;
+	border: 0;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 5px 20px;
+}
+.footer_link li a {
+	font-size: 14px;
+	padding: 0 5px;
+	color: #687188;
+} 
+.footer_dark h1, .footer_dark h2, .footer_dark h3, .footer_dark h4, .footer_dark h5, .footer_dark h6, .footer_dark p, .footer_dark a, .footer_dark .widget_links li a, .footer_dark .footer_link li a, .footer_dark .post_content a {
+	color: #fff;
+}
+.footer_dark a:hover, .footer_dark .widget_links li a:hover, .widget_links li a:hover, .footer_dark .footer_link li a:hover,.footer_link li a:hover {
+	color: #FF324D;
+}
+
+/*==================== END FOOTER STYLE ======================*/
+
+/* 
+.nanResponsive{
+	background-color: #000;
+} */
+
+
+.overlay{
+background-color: rgba(0,0,0,0.5);
+/* background-size: cover; */
+height: 100%;
+}
+.item1{
+	border-radius: 10px;
+}
+
